@@ -27,7 +27,7 @@ For VS2013 it is possible to do at:
 
 Then in created resource file you have to add at top of file:
 
-> #include "config.h"
+> include "config.h"
 
 Change next lines:
 
