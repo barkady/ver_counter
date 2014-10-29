@@ -131,8 +131,9 @@ It is possible to split your release at different parts, that user will be able 
 After them you have to choose dependencies: external software that have to be installed. And set them as needs. There exist some examples. Or just delete lines.
 
 Examples:
-> lines.append('Source: "..\\..\\dependencies\\vcredist_x86.exe"; DestDir: "{tmp}"; Flags: ignoreversion; Components: ' + projectname + '\\dependencies\n')
-> lines.append('Source: "..\\..\\dependencies\\python-suds-0.4\\*"; DestDir: "{tmp}\\python-suds-0.4"; Flags: ignoreversion allowunsafefiles recursesubdirs createallsubdirs; Components: Python\\suds\n')
+
+	lines.append('Source: "..\\..\\dependencies\\vcredist_x86.exe"; DestDir: "{tmp}"; Flags: ignoreversion; Components: ' + projectname + '\\dependencies\n')
+	lines.append('Source: "..\\..\\dependencies\\python-suds-0.4\\*"; DestDir: "{tmp}\\python-suds-0.4"; Flags: ignoreversion allowunsafefiles recursesubdirs createallsubdirs; Components: Python\\suds\n')
 
 After that you may add changes to components.
 Then there goes example how to change PATH using InnoSetup. Delete it, use it.
